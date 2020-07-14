@@ -1,7 +1,7 @@
 {
-  "name": "@azure-tools/adl-plugin-sample",
+  "name": "adl-rules-template",
   "version": "1.0.0",
-  "description": "ADL sample plugin",
+  "description": "ADL Rules Template",
   "types": "./dist/index",
   "main": "dist/exports.js",
   "engines": {
