@@ -5,9 +5,7 @@ export default <Rule>{
   activation: 'edit',
   meta: {
     severity: 'error',
-    description: 'API version must be in the format: yyyy - MM - dd, optionally followed by - preview, - alpha, -beta, -rc, -privatepreview.',
-    documentationUrl: 'URL',
-
+    description: 'API version must be in the format: yyyy - MM - dd, optionally followed by - preview, - alpha, -beta, -rc, -privatepreview.'
   },
   onAliasType: (model, alias) => checkVersionFormat(alias),
   onDeclaredResponseCollections: (model, reponseCollection) => checkVersionFormat(reponseCollection),

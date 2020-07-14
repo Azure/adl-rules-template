@@ -1,18 +1,35 @@
 {
-  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist",
-    "rootDir": ".",
+    "alwaysStrict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "strict": true,
+    "declaration": true,
+    "stripInternal": true,
+"outDir": "dist",
+    "noEmitHelpers": false,
+    "target": "es2019",
     "types": [
       "node"
-    ]
+    ],
+    "lib": [
+      "es2019"
+    ],
+    "experimentalDecorators": true,
+    "newLine": "LF",
+    "rootDir": ".",
   },
   "include": [
     "."
   ],
   "exclude": [
     "dist",
-    "test.ts/scenarios/**",
     "resources",
     "node_modules",
     "**/*.d.ts",
